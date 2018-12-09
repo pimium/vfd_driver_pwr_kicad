@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:vfd_driver-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L atmel:ATTINY13-20PU U1
+L vfd_driver-rescue:ATTINY13-20PU-atmel U1
 U 1 1 5C033CB7
 P 2550 1550
 F 0 "U1" H 2550 2067 50  0000 C CNN
@@ -109,8 +109,6 @@ NoConn ~ 3550 1600
 NoConn ~ 3550 1700
 Wire Wire Line
 	3550 1800 4200 1800
-Wire Wire Line
-	3750 1500 3550 1500
 $Comp
 L power:GND #PWR02
 U 1 1 5C03E104
@@ -318,7 +316,7 @@ U 1 1 5C0572A0
 P 2900 3300
 F 0 "T1" H 2900 3681 50  0000 C CNN
 F 1 "Transformer_1P_SS" H 2900 3590 50  0000 C CNN
-F 2 "custom:Transformer_toroid_v_10mm" H 2900 3300 50  0001 C CNN
+F 2 "modules:Transformer_toroid_v_10mm" H 2900 3300 50  0001 C CNN
 F 3 "~" H 2900 3300 50  0001 C CNN
 	1    2900 3300
 	1    0    0    -1  
@@ -385,7 +383,7 @@ Wire Wire Line
 Text Label 4200 1400 2    50   ~ 0
 FILAMENT
 $Comp
-L atmel:AVR-ISP-6 CON1
+L vfd_driver-rescue:AVR-ISP-6-atmel CON1
 U 1 1 5C0763C3
 P 5050 6700
 F 0 "CON1" H 4821 6796 50  0000 R CNN
@@ -700,7 +698,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 2000 8500 2300
 $Comp
-L custom:futaba_7_lt_44z J2
+L vfd_driver-rescue:futaba_7_lt_44z-custom J2
 U 1 1 5C057512
 P 10550 4350
 F 0 "J2" H 10828 4351 50  0000 L CNN
@@ -1419,4 +1417,72 @@ Text Label 1300 5300 2    50   ~ 0
 GRAD
 Text Label 4300 4800 0    50   ~ 0
 GRAD
+$Comp
+L power:VCC #PWR037
+U 1 1 5C0C3C8C
+P 10150 950
+F 0 "#PWR037" H 10150 800 50  0001 C CNN
+F 1 "VCC" H 10167 1123 50  0000 C CNN
+F 2 "" H 10150 950 50  0001 C CNN
+F 3 "" H 10150 950 50  0001 C CNN
+	1    10150 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5C0C3E3D
+P 10150 1300
+F 0 "RV1" H 10080 1346 50  0000 R CNN
+F 1 "10k" H 10080 1255 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10150 1300 50  0001 C CNN
+F 3 "~" H 10150 1300 50  0001 C CNN
+	1    10150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5C0C4073
+P 10150 2100
+F 0 "#PWR038" H 10150 1850 50  0001 C CNN
+F 1 "GND" H 10155 1927 50  0000 C CNN
+F 2 "" H 10150 2100 50  0001 C CNN
+F 3 "" H 10150 2100 50  0001 C CNN
+	1    10150 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1150 10150 1100
+Wire Wire Line
+	10150 1450 10150 1550
+Wire Wire Line
+	10150 1950 10150 2100
+Wire Wire Line
+	10300 1300 10300 1100
+Wire Wire Line
+	10300 1100 10150 1100
+Connection ~ 10150 1100
+Wire Wire Line
+	10150 1100 10150 950 
+Wire Wire Line
+	10150 1550 10550 1550
+Connection ~ 10150 1550
+Wire Wire Line
+	10150 1550 10150 1650
+Text Label 10550 1550 2    50   ~ 0
+ADC
+Text Label 4200 1500 2    50   ~ 0
+ADC
+$Comp
+L Device:R R11
+U 1 1 5C10591B
+P 10150 1800
+F 0 "R11" V 9943 1800 50  0000 C CNN
+F 1 "1K" V 10034 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10080 1800 50  0001 C CNN
+F 3 "~" H 10150 1800 50  0001 C CNN
+	1    10150 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 1500 4200 1500
 $EndSCHEMATC
