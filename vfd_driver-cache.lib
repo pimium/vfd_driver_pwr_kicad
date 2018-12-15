@@ -428,11 +428,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# vfd_driver-rescue_ATTINY13-20PU-atmel
+# vfd_driver-rescue_ATTINY13-20PU-atmel-vfd_driver-rescue
 #
-DEF vfd_driver-rescue_ATTINY13-20PU-atmel U 0 40 Y Y 1 F N
+DEF vfd_driver-rescue_ATTINY13-20PU-atmel-vfd_driver-rescue U 0 40 Y Y 1 F N
 F0 "U" -800 400 50 H V C CNN
-F1 "vfd_driver-rescue_ATTINY13-20PU-atmel" 650 -400 50 H V C CNN
+F1 "vfd_driver-rescue_ATTINY13-20PU-atmel-vfd_driver-rescue" 650 -400 50 H V C CNN
 F2 "Housings_DIP:DIP-8_W7.62mm" 650 0 50 H I C CIN
 F3 "" -800 350 50 H I C CNN
 DRAW
@@ -448,11 +448,11 @@ X VCC 8 1000 250 150 L 40 40 1 1 W
 ENDDRAW
 ENDDEF
 #
-# vfd_driver-rescue_AVR-ISP-6-atmel
+# vfd_driver-rescue_AVR-ISP-6-atmel-vfd_driver-rescue
 #
-DEF vfd_driver-rescue_AVR-ISP-6-atmel CON 0 40 Y Y 1 F N
+DEF vfd_driver-rescue_AVR-ISP-6-atmel-vfd_driver-rescue CON 0 40 Y Y 1 F N
 F0 "CON" 0 400 50 H V L CNN
-F1 "vfd_driver-rescue_AVR-ISP-6-atmel" 0 -300 50 H V L CNN
+F1 "vfd_driver-rescue_AVR-ISP-6-atmel-vfd_driver-rescue" 0 -300 50 H V L CNN
 F2 "" -250 50 50 V I C CNN
 F3 "" -1275 -550 50 H I C CNN
 $FPLIST
@@ -476,11 +476,11 @@ X GND 6 -100 -400 150 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# vfd_driver-rescue_futaba_7_lt_44z-custom
+# vfd_driver-rescue_futaba_7_lt_44z-custom-vfd_driver-rescue
 #
-DEF vfd_driver-rescue_futaba_7_lt_44z-custom J 0 40 Y Y 1 F N
+DEF vfd_driver-rescue_futaba_7_lt_44z-custom-vfd_driver-rescue J 0 40 Y Y 1 F N
 F0 "J" 0 1700 50 H V C CNN
-F1 "vfd_driver-rescue_futaba_7_lt_44z-custom" 0 -1800 50 H V C CNN
+F1 "vfd_driver-rescue_futaba_7_lt_44z-custom-vfd_driver-rescue" 0 -1800 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

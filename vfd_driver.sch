@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:vfd_driver-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L vfd_driver-rescue:ATTINY13-20PU-atmel U1
+L vfd_driver-rescue:ATTINY13-20PU-atmel-vfd_driver-rescue U1
 U 1 1 5C033CB7
 P 2550 1550
 F 0 "U1" H 2550 2067 50  0000 C CNN
@@ -375,7 +375,7 @@ Wire Wire Line
 Text Label 4200 1400 2    50   ~ 0
 FILAMENT
 $Comp
-L vfd_driver-rescue:AVR-ISP-6-atmel CON1
+L vfd_driver-rescue:AVR-ISP-6-atmel-vfd_driver-rescue CON1
 U 1 1 5C0763C3
 P 5050 6700
 F 0 "CON1" H 4821 6796 50  0000 R CNN
@@ -675,7 +675,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 2000 8500 2300
 $Comp
-L vfd_driver-rescue:futaba_7_lt_44z-custom J2
+L vfd_driver-rescue:futaba_7_lt_44z-custom-vfd_driver-rescue J2
 U 1 1 5C057512
 P 10550 4350
 F 0 "J2" H 10828 4351 50  0000 L CNN
@@ -1029,7 +1029,7 @@ c
 Text Label 9900 5350 0    50   ~ 0
 b
 Text Label 9900 5450 0    50   ~ 0
-b
+a
 Wire Wire Line
 	10350 5650 10200 5650
 Wire Wire Line
@@ -1079,13 +1079,13 @@ Text Label 9350 3300 2    50   ~ 0
 S2
 Text Label 9350 3200 2    50   ~ 0
 S3
-Text Label 9350 3700 2    50   ~ 0
+Text Label 9350 3600 2    50   ~ 0
 G3
 Text Label 9350 3500 2    50   ~ 0
 G4
 Text Label 9350 3100 2    50   ~ 0
 G5
-Text Label 9350 3600 2    50   ~ 0
+Text Label 9350 3700 2    50   ~ 0
 g
 Text Label 9350 3800 2    50   ~ 0
 f
@@ -1115,10 +1115,10 @@ Text Label 9350 5300 2    50   ~ 0
 d
 Text Label 9350 5400 2    50   ~ 0
 c
-Text Label 9350 5600 2    50   ~ 0
-b
 Text Label 9350 5700 2    50   ~ 0
 b
+Text Label 9350 5600 2    50   ~ 0
+a
 Wire Wire Line
 	8900 5100 9350 5100
 Wire Wire Line
@@ -1636,4 +1636,66 @@ Wire Wire Line
 	2200 5650 2200 5750
 Wire Wire Line
 	2200 5050 2200 5350
+$Comp
+L power:GND #PWR0101
+U 1 1 5C15D6F6
+P 6100 7150
+F 0 "#PWR0101" H 6100 6900 50  0001 C CNN
+F 1 "GND" H 6105 6977 50  0000 C CNN
+F 2 "" H 6100 7150 50  0001 C CNN
+F 3 "" H 6100 7150 50  0001 C CNN
+	1    6100 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C15DD1A
+P 6700 7150
+F 0 "#PWR0102" H 6700 6900 50  0001 C CNN
+F 1 "GND" H 6705 6977 50  0000 C CNN
+F 2 "" H 6700 7150 50  0001 C CNN
+F 3 "" H 6700 7150 50  0001 C CNN
+	1    6700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5C15E357
+P 6400 7000
+F 0 "R13" V 6300 6950 50  0000 L CNN
+F 1 "0" V 6400 7000 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6330 7000 50  0001 C CNN
+F 3 "~" H 6400 7000 50  0001 C CNN
+	1    6400 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 7000 6100 7000
+Wire Wire Line
+	6100 7000 6100 7150
+Wire Wire Line
+	6550 7000 6700 7000
+Wire Wire Line
+	6700 7000 6700 7150
+$Comp
+L Device:R R14
+U 1 1 5C1838FE
+P 6400 6800
+F 0 "R14" V 6300 6750 50  0000 L CNN
+F 1 "0" V 6400 6800 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6330 6800 50  0001 C CNN
+F 3 "~" H 6400 6800 50  0001 C CNN
+	1    6400 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 6800 6700 6800
+Wire Wire Line
+	6700 6800 6700 7000
+Connection ~ 6700 7000
+Wire Wire Line
+	6250 6800 6100 6800
+Wire Wire Line
+	6100 6800 6100 7000
+Connection ~ 6100 7000
 $EndSCHEMATC
