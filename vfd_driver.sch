@@ -194,12 +194,12 @@ Wire Wire Line
 $Comp
 L Device:L L1
 U 1 1 5C049702
-P 2200 5850
-F 0 "L1" H 2253 5896 50  0000 L CNN
-F 1 "330" H 2253 5805 50  0000 L CNN
-F 2 "Choke_SMD:Choke_CD75" H 2200 5850 50  0001 C CNN
-F 3 "~" H 2200 5850 50  0001 C CNN
-	1    2200 5850
+P 2200 5900
+F 0 "L1" H 2253 5946 50  0000 L CNN
+F 1 "330" H 2253 5855 50  0000 L CNN
+F 2 "Choke_SMD:Choke_CD75" H 2200 5900 50  0001 C CNN
+F 3 "~" H 2200 5900 50  0001 C CNN
+	1    2200 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -265,34 +265,29 @@ $EndComp
 $Comp
 L Device:CP C3
 U 1 1 5C04E6A3
-P 1800 5850
-F 0 "C3" H 1918 5896 50  0000 L CNN
-F 1 "220u" H 1918 5805 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 1838 5700 50  0001 C CNN
-F 3 "~" H 1800 5850 50  0001 C CNN
-	1    1800 5850
+P 1150 3350
+F 0 "C3" H 1268 3396 50  0000 L CNN
+F 1 "220u" H 1268 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 1188 3200 50  0001 C CNN
+F 3 "~" H 1150 3350 50  0001 C CNN
+	1    1150 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 5C04FCF9
-P 1800 6100
-F 0 "#PWR05" H 1800 5850 50  0001 C CNN
-F 1 "GND" H 1805 5927 50  0000 C CNN
-F 2 "" H 1800 6100 50  0001 C CNN
-F 3 "" H 1800 6100 50  0001 C CNN
-	1    1800 6100
+P 1150 3600
+F 0 "#PWR05" H 1150 3350 50  0001 C CNN
+F 1 "GND" H 1155 3427 50  0000 C CNN
+F 2 "" H 1150 3600 50  0001 C CNN
+F 3 "" H 1150 3600 50  0001 C CNN
+	1    1150 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 5700 1800 5600
+	1150 3200 1150 3100
 Wire Wire Line
-	1800 5600 2200 5600
-Connection ~ 2200 5600
-Wire Wire Line
-	2200 5600 2200 5700
-Wire Wire Line
-	1800 6100 1800 6000
+	1150 3600 1150 3500
 Wire Wire Line
 	3150 6150 3150 6350
 Text Label 950  6500 0    50   ~ 0
@@ -356,10 +351,7 @@ FIL_n
 Text Label 3750 3500 2    50   ~ 0
 FIL_p
 Wire Wire Line
-	2200 6000 2200 6150
-Wire Wire Line
 	2650 6150 2500 6150
-Connection ~ 2200 6150
 $Comp
 L power:+36V #PWR010
 U 1 1 5C05FB61
@@ -477,8 +469,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 2900 1150 3100
 Wire Wire Line
-	1150 3100 1750 3100
-Wire Wire Line
 	3500 2900 2200 2900
 Wire Wire Line
 	2200 2900 2200 3100
@@ -487,10 +477,8 @@ Wire Wire Line
 	2200 3100 2500 3100
 Text Label 1900 3100 0    50   ~ 0
 5VOLT
-Text Label 2200 5300 3    50   ~ 0
+Text Label 2200 5050 3    50   ~ 0
 5VOLT
-Wire Wire Line
-	2200 5300 2200 5600
 $Comp
 L 74xx:74HC595 U2
 U 1 1 5C0BD50F
@@ -500,17 +488,6 @@ F 1 "74HC595" H 7250 1150 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 7250 1500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 7250 1500 50  0001 C CNN
 	1    7250 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_Array:TBD62783A U5
-U 1 1 5C0C2835
-P 8500 1400
-F 0 "U5" H 8450 1550 50  0000 C CNN
-F 1 "TBD62783A" H 8500 1150 50  0000 C CNN
-F 2 "Package_SO:SOP-18_7.0x12.5mm_P1.27mm" H 8500 850 50  0001 C CNN
-F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 8200 1800 50  0001 C CNN
-	1    8500 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -780,22 +757,6 @@ Wire Wire Line
 Text Label 7900 2000 2    50   ~ 0
 Q0
 Wire Wire Line
-	8100 1100 7650 1100
-Wire Wire Line
-	8100 1200 7650 1200
-Wire Wire Line
-	8100 1300 7650 1300
-Wire Wire Line
-	8100 1400 7650 1400
-Wire Wire Line
-	8100 1500 7650 1500
-Wire Wire Line
-	8100 1600 7650 1600
-Wire Wire Line
-	8100 1700 7650 1700
-Wire Wire Line
-	8100 1800 7650 1800
-Wire Wire Line
 	7250 2300 7250 2200
 Wire Wire Line
 	6700 2300 6700 1700
@@ -903,22 +864,6 @@ Wire Wire Line
 Text Label 7900 4000 2    50   ~ 0
 Q1
 Wire Wire Line
-	8100 3100 7650 3100
-Wire Wire Line
-	8100 3200 7650 3200
-Wire Wire Line
-	8100 3300 7650 3300
-Wire Wire Line
-	8100 3400 7650 3400
-Wire Wire Line
-	8100 3500 7650 3500
-Wire Wire Line
-	8100 3600 7650 3600
-Wire Wire Line
-	8100 3700 7650 3700
-Wire Wire Line
-	8100 3800 7650 3800
-Wire Wire Line
 	7250 4300 7250 4200
 Wire Wire Line
 	6700 4300 6700 3700
@@ -1024,22 +969,6 @@ Wire Wire Line
 Wire Wire Line
 	7650 6000 7900 6000
 Wire Wire Line
-	8100 5100 7650 5100
-Wire Wire Line
-	8100 5200 7650 5200
-Wire Wire Line
-	8100 5300 7650 5300
-Wire Wire Line
-	8100 5400 7650 5400
-Wire Wire Line
-	8100 5500 7650 5500
-Wire Wire Line
-	8100 5600 7650 5600
-Wire Wire Line
-	8100 5700 7650 5700
-Wire Wire Line
-	8100 5800 7650 5800
-Wire Wire Line
 	7250 6300 7250 6200
 Wire Wire Line
 	6700 6300 6700 5700
@@ -1101,8 +1030,6 @@ Text Label 9900 5350 0    50   ~ 0
 b
 Text Label 9900 5450 0    50   ~ 0
 b
-Wire Wire Line
-	7850 3650 7800 3650
 Wire Wire Line
 	10350 5650 10200 5650
 Wire Wire Line
@@ -1391,7 +1318,7 @@ Wire Wire Line
 	900  4800 1300 4800
 Wire Wire Line
 	1300 4800 1300 4550
-Text Label 1300 5100 2    50   ~ 0
+Text Label 1300 4900 2    50   ~ 0
 nSRCLR
 Wire Wire Line
 	1300 4900 900  4900
@@ -1407,11 +1334,11 @@ Wire Wire Line
 	1200 5400 1200 5500
 Wire Wire Line
 	1200 5400 900  5400
-Text Label 1300 4900 2    50   ~ 0
+Text Label 1300 5200 2    50   ~ 0
 DATA
 Text Label 1300 5000 2    50   ~ 0
 SRCLK
-Text Label 1300 5200 2    50   ~ 0
+Text Label 1300 5100 2    50   ~ 0
 RCLK
 Text Label 1300 5300 2    50   ~ 0
 GRAD
@@ -1485,4 +1412,228 @@ F 3 "~" H 10150 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 1500 4200 1500
+Connection ~ 1150 3100
+Wire Wire Line
+	1150 3100 1750 3100
+Text Label 7800 1100 2    50   ~ 0
+Q1A
+Text Label 7800 1200 2    50   ~ 0
+Q1B
+Text Label 7800 1300 2    50   ~ 0
+Q1C
+Text Label 7800 1400 2    50   ~ 0
+Q1D
+Text Label 7800 1500 2    50   ~ 0
+Q1E
+Text Label 7800 1600 2    50   ~ 0
+Q1F
+Text Label 7800 1700 2    50   ~ 0
+Q1G
+Text Label 7800 1800 2    50   ~ 0
+Q1H
+Text Label 7950 1800 0    50   ~ 0
+Q1A
+Text Label 7950 1700 0    50   ~ 0
+Q1B
+Text Label 7950 1600 0    50   ~ 0
+Q1C
+Text Label 7950 1500 0    50   ~ 0
+Q1D
+Text Label 7950 1400 0    50   ~ 0
+Q1E
+Text Label 7950 1300 0    50   ~ 0
+Q1F
+Text Label 7950 1200 0    50   ~ 0
+Q1G
+Text Label 7950 1100 0    50   ~ 0
+Q1H
+$Comp
+L Transistor_Array:TBD62783A U5
+U 1 1 5C0C2835
+P 8500 1400
+F 0 "U5" H 8450 1550 50  0000 C CNN
+F 1 "TBD62783A" H 8500 1150 50  0000 C CNN
+F 2 "Package_SO:SOP-18_7.0x12.5mm_P1.27mm" H 8500 850 50  0001 C CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 8200 1800 50  0001 C CNN
+	1    8500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1100 7650 1100
+Wire Wire Line
+	7800 1200 7650 1200
+Wire Wire Line
+	7800 1300 7650 1300
+Wire Wire Line
+	7800 1400 7650 1400
+Wire Wire Line
+	7800 1500 7650 1500
+Wire Wire Line
+	7800 1600 7650 1600
+Wire Wire Line
+	7800 1700 7650 1700
+Wire Wire Line
+	7800 1800 7650 1800
+Wire Wire Line
+	7950 1100 8100 1100
+Wire Wire Line
+	7950 1200 8100 1200
+Wire Wire Line
+	7950 1300 8100 1300
+Wire Wire Line
+	7950 1400 8100 1400
+Wire Wire Line
+	7950 1500 8100 1500
+Wire Wire Line
+	7950 1600 8100 1600
+Wire Wire Line
+	7950 1700 8100 1700
+Wire Wire Line
+	7950 1800 8100 1800
+Text Label 7800 3100 2    50   ~ 0
+Q2A
+Text Label 7800 3200 2    50   ~ 0
+Q2B
+Text Label 7800 3300 2    50   ~ 0
+Q2C
+Text Label 7800 3400 2    50   ~ 0
+Q2D
+Text Label 7800 3500 2    50   ~ 0
+Q2E
+Text Label 7800 3600 2    50   ~ 0
+Q2F
+Text Label 7800 3700 2    50   ~ 0
+Q2G
+Text Label 7800 3800 2    50   ~ 0
+Q2H
+Text Label 7950 3800 0    50   ~ 0
+Q2A
+Text Label 7950 3700 0    50   ~ 0
+Q2B
+Text Label 7950 3600 0    50   ~ 0
+Q2C
+Text Label 7950 3500 0    50   ~ 0
+Q2D
+Text Label 7950 3400 0    50   ~ 0
+Q2E
+Text Label 7950 3300 0    50   ~ 0
+Q2F
+Text Label 7950 3200 0    50   ~ 0
+Q2G
+Text Label 7950 3100 0    50   ~ 0
+Q2H
+Wire Wire Line
+	7800 3600 7650 3600
+Wire Wire Line
+	7950 3100 8100 3100
+Wire Wire Line
+	7950 3200 8100 3200
+Wire Wire Line
+	7950 3300 8100 3300
+Wire Wire Line
+	7950 3400 8100 3400
+Wire Wire Line
+	7950 3500 8100 3500
+Wire Wire Line
+	7950 3600 8100 3600
+Wire Wire Line
+	7950 3700 8100 3700
+Wire Wire Line
+	7800 3800 7650 3800
+Wire Wire Line
+	7800 3700 7650 3700
+Wire Wire Line
+	7800 3500 7650 3500
+Wire Wire Line
+	7800 3400 7650 3400
+Wire Wire Line
+	7800 3300 7650 3300
+Wire Wire Line
+	7800 3200 7650 3200
+Wire Wire Line
+	7800 3100 7650 3100
+Wire Wire Line
+	8100 3800 7950 3800
+Text Label 7800 5100 2    50   ~ 0
+Q3A
+Text Label 7800 5200 2    50   ~ 0
+Q3B
+Text Label 7800 5300 2    50   ~ 0
+Q3C
+Text Label 7800 5400 2    50   ~ 0
+Q3D
+Text Label 7800 5500 2    50   ~ 0
+Q3E
+Text Label 7800 5600 2    50   ~ 0
+Q3F
+Text Label 7800 5700 2    50   ~ 0
+Q3G
+Text Label 7800 5800 2    50   ~ 0
+Q3H
+Wire Wire Line
+	7800 5600 7650 5600
+Wire Wire Line
+	7800 5800 7650 5800
+Wire Wire Line
+	7800 5700 7650 5700
+Wire Wire Line
+	7800 5500 7650 5500
+Wire Wire Line
+	7800 5400 7650 5400
+Wire Wire Line
+	7800 5300 7650 5300
+Wire Wire Line
+	7800 5200 7650 5200
+Wire Wire Line
+	7800 5100 7650 5100
+Text Label 7950 5800 0    50   ~ 0
+Q3A
+Text Label 7950 5700 0    50   ~ 0
+Q3B
+Text Label 7950 5600 0    50   ~ 0
+Q3C
+Text Label 7950 5500 0    50   ~ 0
+Q3D
+Text Label 7950 5400 0    50   ~ 0
+Q3E
+Text Label 7950 5300 0    50   ~ 0
+Q3F
+Text Label 7950 5200 0    50   ~ 0
+Q3G
+Text Label 7950 5100 0    50   ~ 0
+Q3H
+Wire Wire Line
+	7950 5100 8100 5100
+Wire Wire Line
+	7950 5200 8100 5200
+Wire Wire Line
+	7950 5300 8100 5300
+Wire Wire Line
+	7950 5400 8100 5400
+Wire Wire Line
+	7950 5500 8100 5500
+Wire Wire Line
+	7950 5600 8100 5600
+Wire Wire Line
+	7950 5700 8100 5700
+Wire Wire Line
+	8100 5800 7950 5800
+$Comp
+L Device:R R12
+U 1 1 5C144560
+P 2200 5500
+F 0 "R12" H 2270 5546 50  0000 L CNN
+F 1 "0" H 2270 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2130 5500 50  0001 C CNN
+F 3 "~" H 2200 5500 50  0001 C CNN
+	1    2200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6150 2200 6050
+Connection ~ 2200 6150
+Wire Wire Line
+	2200 5650 2200 5750
+Wire Wire Line
+	2200 5050 2200 5350
 $EndSCHEMATC
