@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "VFD DRIVER"
 Date ""
 Rev ""
 Comp ""
@@ -237,7 +237,7 @@ DATA
 Text Label 2800 1400 0    50   ~ 0
 SRCLK
 Text Label 2800 1500 0    50   ~ 0
-nSRCLR
+~SRCLR
 Text Label 2800 1700 0    50   ~ 0
 RCLK
 $Comp
@@ -263,7 +263,7 @@ U 1 1 5C057512
 P 10550 4350
 F 0 "J2" H 10828 4351 50  0000 L CNN
 F 1 "futaba_7_lt_44z" H 10300 6100 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x34_P2.54mm_Vertical_SMD_Pin1Left" H 10550 4350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x34_P2.54mm_Vertical" H 10550 4350 50  0001 C CNN
 F 3 "" H 10550 4350 50  0001 C CNN
 	1    10550 4350
 	1    0    0    -1  
@@ -335,7 +335,7 @@ NoConn ~ 10350 2850
 NoConn ~ 10350 4350
 NoConn ~ 10350 4450
 NoConn ~ 10350 5950
-Text Label 4150 2100 2    50   ~ 0
+Text Label 4250 2100 2    50   ~ 0
 Q0
 Wire Wire Line
 	3600 2400 3600 2300
@@ -420,7 +420,7 @@ Wire Wire Line
 Text Label 2800 3800 0    50   ~ 0
 SRCLK
 Text Label 2800 3900 0    50   ~ 0
-nSRCLR
+~SRCLR
 Text Label 2800 4100 0    50   ~ 0
 RCLK
 $Comp
@@ -527,7 +527,7 @@ Wire Wire Line
 Text Label 2800 6350 0    50   ~ 0
 SRCLK
 Text Label 2800 6450 0    50   ~ 0
-nSRCLR
+~SRCLR
 Text Label 2800 6650 0    50   ~ 0
 RCLK
 $Comp
@@ -656,13 +656,13 @@ Text Label 6450 3800 2    50   ~ 0
 S2
 Text Label 6450 3700 2    50   ~ 0
 S3
-Text Label 6450 4100 2    50   ~ 0
+Text Label 6450 4200 2    50   ~ 0
 G3
 Text Label 6450 4000 2    50   ~ 0
 G4
 Text Label 6450 3600 2    50   ~ 0
 G5
-Text Label 6450 4200 2    50   ~ 0
+Text Label 6450 4100 2    50   ~ 0
 g
 Text Label 6450 4300 2    50   ~ 0
 f
@@ -692,9 +692,9 @@ Text Label 6450 6350 2    50   ~ 0
 d
 Text Label 6450 6450 2    50   ~ 0
 c
-Text Label 6450 6750 2    50   ~ 0
-b
 Text Label 6450 6650 2    50   ~ 0
+b
+Text Label 6450 6750 2    50   ~ 0
 a
 Wire Wire Line
 	6000 6150 6450 6150
@@ -849,7 +849,7 @@ F 3 "" H 1950 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1700 3100 2    50   ~ 0
-nSRCLR
+~SRCLR
 Wire Wire Line
 	1700 3100 1300 3100
 Wire Wire Line
@@ -1276,8 +1276,6 @@ Wire Wire Line
 	1000 1900 1000 2000
 Wire Wire Line
 	1000 2000 1300 2000
-Wire Wire Line
-	4150 2100 4000 2100
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5C9205A2
@@ -1393,4 +1391,6 @@ Wire Wire Line
 	1300 3700 1950 3700
 Wire Wire Line
 	7250 5400 7350 5400
+Wire Wire Line
+	4000 2100 4250 2100
 $EndSCHEMATC
