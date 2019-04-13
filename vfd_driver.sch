@@ -82,23 +82,23 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0101
 U 1 1 5C15D6F6
-P 950 5350
-F 0 "#PWR0101" H 950 5100 50  0001 C CNN
-F 1 "GND" H 955 5177 50  0000 C CNN
-F 2 "" H 950 5350 50  0001 C CNN
-F 3 "" H 950 5350 50  0001 C CNN
-	1    950  5350
+P 950 5100
+F 0 "#PWR0101" H 950 4850 50  0001 C CNN
+F 1 "GND" H 955 4927 50  0000 C CNN
+F 2 "" H 950 5100 50  0001 C CNN
+F 3 "" H 950 5100 50  0001 C CNN
+	1    950  5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5C15DD1A
-P 1300 5350
-F 0 "#PWR0102" H 1300 5100 50  0001 C CNN
-F 1 "GND" H 1305 5177 50  0000 C CNN
-F 2 "" H 1300 5350 50  0001 C CNN
-F 3 "" H 1300 5350 50  0001 C CNN
-	1    1300 5350
+P 1300 5100
+F 0 "#PWR0102" H 1300 4850 50  0001 C CNN
+F 1 "GND" H 1305 4927 50  0000 C CNN
+F 2 "" H 1300 5100 50  0001 C CNN
+F 3 "" H 1300 5100 50  0001 C CNN
+	1    1300 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -439,10 +439,6 @@ F 3 "" H 7300 2350 50  0001 C CNN
 	1    7300 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	950  4750 950  5350
-Wire Wire Line
-	1300 4750 1300 5350
 $Comp
 L Regulator_Switching:LT1073CS U2
 U 1 1 5C8D0054
@@ -636,14 +632,51 @@ Wire Wire Line
 Wire Wire Line
 	1500 1450 1500 1750
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0104
 U 1 1 5CB2E3D1
 P 2100 1900
-F 0 "#PWR?" H 2100 1750 50  0001 C CNN
+F 0 "#PWR0104" H 2100 1750 50  0001 C CNN
 F 1 "+12V" H 2115 2073 50  0000 C CNN
 F 2 "" H 2100 1900 50  0001 C CNN
 F 3 "" H 2100 1900 50  0001 C CNN
 	1    2100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5CB28A83
+P 950 6250
+F 0 "H3" H 1050 6299 50  0000 L CNN
+F 1 "MH" H 1050 6208 50  0000 L CNN
+F 2 "custom_footprint:markierung" H 950 6250 50  0001 C CNN
+F 3 "~" H 950 6250 50  0001 C CNN
+	1    950  6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4750 950  5100
+Wire Wire Line
+	1300 4750 1300 5100
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5CB2E9A0
+P 1300 6250
+F 0 "H4" H 1400 6299 50  0000 L CNN
+F 1 "MH" H 1400 6208 50  0000 L CNN
+F 2 "custom_footprint:markierung" H 1300 6250 50  0001 C CNN
+F 3 "~" H 1300 6250 50  0001 C CNN
+	1    1300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5CB2E9E6
+P 1650 6250
+F 0 "H5" H 1750 6299 50  0000 L CNN
+F 1 "MH" H 1750 6208 50  0000 L CNN
+F 2 "custom_footprint:markierung" H 1650 6250 50  0001 C CNN
+F 3 "~" H 1650 6250 50  0001 C CNN
+	1    1650 6250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
