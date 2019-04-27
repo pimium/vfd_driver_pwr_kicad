@@ -259,11 +259,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# vfd_driver-rescue_LM4871-LM4871
+# vfd_driver-rescue_LM4871-LM4871-vfd_driver-rescue
 #
-DEF ~vfd_driver-rescue_LM4871-LM4871 U 0 40 Y Y 1 F N
+DEF ~vfd_driver-rescue_LM4871-LM4871-vfd_driver-rescue U 0 40 Y Y 1 F N
 F0 "U" -501 430 50 H V L BNN
-F1 "vfd_driver-rescue_LM4871-LM4871" -150 -100 50 H I L BNN
+F1 "vfd_driver-rescue_LM4871-LM4871-vfd_driver-rescue" -150 -100 50 H I L BNN
 F2 "SO08" 0 0 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 F4 "National Semiconductor" -350 350 50 H I L BNN

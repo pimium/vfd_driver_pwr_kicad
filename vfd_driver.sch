@@ -143,7 +143,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 3600 1100 3800
 $Comp
-L vfd_driver-rescue:LM4871-LM4871 U1
+L vfd_driver-rescue:LM4871-LM4871-vfd_driver-rescue U1
 U 1 1 5C9EEB87
 P 7300 3150
 F 0 "U1" H 7300 3150 50  0000 C CNN
